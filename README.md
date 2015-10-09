@@ -2,6 +2,6 @@
 useful things to do with the terminal
 
 ##Contents
-#Server logs
+###Server logs
 2015.10.09
 
