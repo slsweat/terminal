@@ -31,6 +31,10 @@ Print out the top results from the top of the file
 
 	head
 Leave this part off for the entire file
-material obtained from the following site:
+
+
+Material obtained from the following site:
 
 	http://www.linuxjournal.com/article/7396
+
+	and the cheat sheet from learn code the hard way
