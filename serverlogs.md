@@ -38,3 +38,18 @@ Material obtained from the following site:
 	http://www.linuxjournal.com/article/7396
 
 	and the cheat sheet from learn code the hard way
+	
+More
+
+generating a log with just the known spiders/bots
+grep -i "spider\|bot" xalt-september.log > bots.log
+
+generating a log without spiders/bots
+grep -v "spider\|bot" xalt-september.log > notbots.log
+
+accumulating the number of times a bot accessed the site
+grep Sep/2015 bots.log | awk '{print $1}' | sort -n | uniq -c | sort -rn
+
+Adding the date
+grep Sep/2015 bots.log | awk '{print $1,$4}' | sort -n | uniq -c | sort -rn
+
