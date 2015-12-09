@@ -44,11 +44,11 @@ More
 generating a log with just the known spiders/bots
 
 	
-	grep -i "spider\|bot" xalt-september.log > bots.log
+	grep -i "spider\|bot" logfile.log > bots.log
 
 generating a log without spiders/bots
 
-	grep -v "spider\|bot" xalt-september.log > notbots.log
+	grep -v "spider\|bot" logfile.log > notbots.log
 
 accumulating the number of times a bot accessed the site
 
