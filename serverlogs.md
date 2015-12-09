@@ -42,14 +42,23 @@ Material obtained from the following site:
 More
 
 generating a log with just the known spiders/bots
-grep -i "spider\|bot" xalt-september.log > bots.log
+
+	
+	grep -i "spider\|bot" xalt-september.log > bots.log
 
 generating a log without spiders/bots
-grep -v "spider\|bot" xalt-september.log > notbots.log
+
+	grep -v "spider\|bot" xalt-september.log > notbots.log
 
 accumulating the number of times a bot accessed the site
-grep Sep/2015 bots.log | awk '{print $1}' | sort -n | uniq -c | sort -rn
+
+	grep Sep/2015 bots.log | awk '{print $1}' | sort -n | uniq -c | sort -rn
 
 Adding the date
-grep Sep/2015 bots.log | awk '{print $1,$4}' | sort -n | uniq -c | sort -rn
 
+	grep Sep/2015 bots.log | awk '{print $1,$4}' | sort -n | uniq -c | sort -rn
+
+
+To look at in the future:
+http://i-heart-geek.blogspot.com/2011/10/top-command-line-tips-apache-access-log.html
+http://www.jafsoft.com/searchengines/webbots.html
